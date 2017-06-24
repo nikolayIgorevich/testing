@@ -1,0 +1,178 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+*
+	box-sizing: border-box
+
+.x
+	outline: 1px solid red
+
+.clearfix:before,
+.clearfix:after
+	content: ""
+	display: table
+
+.clearfix:after
+	clear: both
+
+ul, li
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+.container 
+	width: 1200px
+	margin: 0 auto
+	padding: 0 30px
+
+.header
+	background: url(../img/main_bg.jpg) 50% center no-repeat
+	background-size: cover 
+
+.logo
+	display: inline-block
+	vertical-align: middle
+
+.main-menu-wrap
+	margin-left: 100px
+	display: inline-block
+	.main-menu
+		li
+			display: inline-block
+			padding: 30px 25px 30px 0
+			vertical-align: middle
+			&:last-child 
+				padding-right: 0
+			&:nth-child(4)
+					position: relative
+					padding-right: 35px
+			a
+				display: block
+				color: #fff
+				font-size: 18px
+				border-bottom: 2px solid transparent
+				&:hover
+					border-bottom: 2px solid #fff
+					transition: all .5s
+				i
+					font-size: 17px
+					position: absolute
+					top: 33px
+					right: 20px
+	.drop-down__menu
+		position: absolute
+		top: 70px
+		left: -10px
+		width: 205px
+		height: 95px
+		padding: 15px 15px 20px
+		background-color: rgba(0,0,0, .2)
+		display: none
+		li
+			display: inline-block
+			padding: 0
+
+.header-phone
+	float: right
+	padding-top: 30px
+	color: #fff
+
+.header-content
+	margin-top: 145px
+	text-align: center
+	color: #fff
+
+.header-title
+	font-size: 42px
+	padding-bottom: 30px
+	margin: 0
+
+.header-descr
+	font-size: 22px
+	padding-bottom: 50px
+	span
+		color: $accent
+
+#header-form
+	position: relative
+	width: 775px
+	margin: 0 auto
+	font-size: 0
+	margin-bottom: 225px
+	.search-ic
+		position: absolute
+		color: #DCDBDC
+		left: 20px
+		font-size: 24px
+		line-height: 55px
+	#search-input
+		height: 55px
+		max-width: 525px
+		display: inline-block
+		outline: none
+		font-size: 24px
+		color: #3C3C3C
+		width: 100%
+		padding: 0 20px 0 50px
+	.search-btn
+		height: 55px
+		max-width: 250px
+		display: inline-block
+		width: 100%
+		border: none
+		outline: none
+		background-color: $accent
+		color: #fff
+		font-size: 24px
+		padding: 0
+		cursor: pointer
+		&:hover
+			background-color: #29386B
+			transition: all .5s
+
+.arrow-down-wrap
+	padding-bottom: 20px
+	text-align: center
+
+.arrow-down
+	position: relative
+	display: inline-block
+	font-size: 26px
+	color: #fff
+
+@import "media" // Всегда в конце
